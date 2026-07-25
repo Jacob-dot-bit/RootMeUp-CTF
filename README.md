@@ -38,7 +38,9 @@ La plateforme n'est **pas exposée sur Internet** : on y accède via un réseau 
 4. Résoudre le challenge (voir le guide de chaque challenge dans `challenges/`).
 5. Soumettre le **flag** trouvé dans CTFd. Les flags sont **sensibles à la casse**.
 
-> ℹ️ Un flag ressemble à `RM{...}`, `blue{...}`, `MERIDIAN{...}` ou `FLAG{...}` selon le challenge.
+> ℹ️ Le format du flag **dépend du challenge** (voir chaque guide) : le plus souvent
+> `RootMeUp{...}`, parfois `FLAG{...}` ou `RM{...}`, `blue{...}` pour certains Blue Team,
+> et parfois une **valeur brute** (un nom, une IP, un port…). Les flags sont **sensibles à la casse**.
 
 ---
 

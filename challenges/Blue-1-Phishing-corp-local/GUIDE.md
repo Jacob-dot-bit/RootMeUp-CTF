@@ -90,13 +90,13 @@ Utilisez le sélecteur de temps en haut à droite pour cibler la période de l'i
 
 ## Format des flags
 
-Chaque réponse est soumise sous la forme :
+Chaque réponse est soumise sous la forme (**sensible à la casse**) :
 
 ```
-FLAG{valeur}
+RootMeUp{valeur}
 ```
 
-Exemple : `FLAG{192.168.10.45}`
+Exemple : `RootMeUp{192.168.10.45}`
 
 ---
 

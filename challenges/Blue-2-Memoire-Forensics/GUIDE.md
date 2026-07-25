@@ -54,8 +54,10 @@ Toutes les commandes ci-dessous se lancent via `python3 vol_analyzer.py -f memor
 5. `windows.strings --pid <PID>` (ou `tools/extract_strings.py`) — extrayez et analysez les chaînes du binaire malveillant.
 6. Récupérez le flag caché dans la configuration du malware.
 
-## Format du flag
-`blue{...}`
+## Format des flags
+La plupart des réponses sont des **valeurs brutes** à recopier telles quelles : un PID
+(ex. `1234`), un nom de fichier (ex. `programme.exe`), une IP, un port. Le **flag final**
+est au format `blue{...}`. Réponses **sensibles à la casse**.
 
 ## Soumission
 Soumets tes réponses dans CTFd (série de flags : PID, exécutable, IP/domaine/port du C2, flag final).

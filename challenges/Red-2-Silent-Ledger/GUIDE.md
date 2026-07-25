@@ -59,7 +59,7 @@ pass: Welcome2024!
 >
 > `ssh j.martin@<host> -p <port>` — mot de passe : `Welcome2024!`
 >
-> Format du flag : `MERIDIAN{...}`
+> Format du flag : `RootMeUp{...}` (sensible à la casse)
 
 ### 2 — Fouille de printemps (75 pts)
 > Les sauvegardes système sont rarement bien nettoyées. Un peu de méthode
