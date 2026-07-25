@@ -16,10 +16,11 @@ La plateforme n'est **pas exposée sur Internet** : on y accède via un réseau 
 1. **Installer Tailscale** : https://tailscale.com/download (Windows, macOS, Linux, mobile).
 2. **Rejoindre le réseau** du CTF via le **lien d'invitation** fourni par l'équipe organisatrice
    *(le lien vous est communiqué séparément — il n'est pas publié ici)*.
-3. Une fois connecté à Tailscale, ouvrir la plateforme **CTFd** dans un navigateur :
+3. Une fois connecté à Tailscale, ouvrir la plateforme **CTFd** dans un navigateur
+   (accès en **HTTPS**) :
 
    ```
-   http://ctf-rootmeup.tail8588a8.ts.net/
+   https://ctf-rootmeup.tail8588a8.ts.net/
    ```
 
 ## 2. Créer un compte & une équipe
@@ -51,6 +52,7 @@ La plateforme n'est **pas exposée sur Internet** : on y accède via un réseau 
 | 🔴 Red 1 | VAULT-9 | Reverse & exploitation binaire | [`GUIDE`](challenges/Red-1-VAULT-9/GUIDE.md) |
 | 🔴 Red 2 | Opération Silent Ledger | Machine Linux compromise (escalade) | [`GUIDE`](challenges/Red-2-Silent-Ledger/GUIDE.md) |
 | 🔴 Red 3 | Nexus Cipher | Pentest d'une API (crypto/web) | [`GUIDE`](challenges/Red-3-Nexus-Cipher/GUIDE.md) |
+| 🔴 Red 4 | Breach & Ascend | Intrusion web puis élévation → root | [`GUIDE`](challenges/Red-4-Breach-and-Ascend/GUIDE.md) |
 
 ---
 
