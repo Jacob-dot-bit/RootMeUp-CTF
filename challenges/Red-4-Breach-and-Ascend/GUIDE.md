@@ -20,6 +20,8 @@ via l'application, puis **remonter les privilèges** étape par étape jusqu'à 
 
 Soumettez chaque flag dans CTFd au fur et à mesure — tout se joue sur la **même instance**.
 
+Format des flags : `FLAG{...}` (sensible à la casse).
+
 ## 🔌 Accès
 
 1. Démarrer l'instance (**Start Instance**) : une **IP** et un **port** vous sont donnés.

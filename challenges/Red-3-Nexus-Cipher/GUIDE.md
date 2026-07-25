@@ -21,7 +21,7 @@ exploitant sa logique, ses failles d'accès et ses faiblesses cryptographiques.
   fur et à mesure dans CTFd, sans attendre la fin.
 - Le **brief détaillé de chaque étape** est disponible sur la page du challenge dans CTFd.
 
-Format des flags : `FLAG{...}` (sensible à la casse).
+Format des flags : `RootMeUp{...}` (sensible à la casse).
 
 ## 🔌 Accès
 
