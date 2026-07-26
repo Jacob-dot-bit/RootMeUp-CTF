@@ -17,29 +17,44 @@ Format des flags : `RM{...}` (sensible à la casse).
 
 ## 🔌 Accès
 
-1. Téléchargez le binaire **`vault`** fourni avec le challenge dans CTFd.
-2. Démarrez l'instance (**Start Instance**) : vous obtenez une **IP** et un **port**.
-3. Connectez-vous au service :
+**Environnement fourni — rien à installer chez vous.**
+
+1. Démarrez l'instance (**Start Instance**) : vous obtenez une **IP** et un **port SSH**.
+2. Connectez-vous à la boîte d'attaque :
 
    ```bash
-   nc <ip> <port>
+   ssh hacker@<ip> -p <port>      # mot de passe : vault9
    ```
 
-Le binaire téléchargé est **identique** à celui qui tourne sur l'instance : analysez-le en local, exploitez-le à distance.
+3. Tout est déjà dans la boîte :
+   - le **binaire à analyser** : `~/vault`
+   - le **service vulnérable**, en écoute locale : `nc localhost 9003` (exécute le même binaire)
+   - les **outils** préinstallés (voir ci-dessous)
 
-## 🧰 Outils suggérés
+> Vous **ne pouvez pas lire les flags directement** (ils appartiennent au service, pas à
+> votre compte) : vous devez **exploiter** `localhost:9003` pour qu'il vous les révèle.
 
-- **Reverse** : `Ghidra`, `IDA Free`, `radare2`/`Cutter`, ou simplement `objdump -d vault`.
-- **Exploitation** : `pwntools` (Python), `gdb` + `pwndbg`/`gef`.
-- **Recon** : `file vault`, `checksec vault`, `strings vault`.
+## 🧰 Outils (déjà installés dans la boîte)
+
+- **Reverse** : `objdump -d ~/vault`, `gdb`, `file ~/vault`, `strings ~/vault`.
+- **Exploitation** : `python3` + **pwntools** (`from pwn import *`), `nc`.
+- **Info binaire** : `python3 -c "from pwn import *; print(ELF('vault'))"` (équivalent `checksec`).
+
+> Vous pouvez aussi **télécharger le binaire `vault`** depuis CTFd pour l'analyser sous
+> Ghidra / IDA en local si vous préférez une interface graphique.
 
 ## 🪜 Pistes (sans spoiler)
 
-- Étape 1 : commencez par `file` et `checksec`. Cherchez la fonction qui valide la licence. Quelle **opération** est appliquée à votre saisie avant la comparaison ? La donnée de référence est en clair dans le binaire… mais transformée.
-- Étape 2 : une fois « administrateur », le terminal de maintenance lit votre entrée. Combien d'octets accepte-t-il vraiment vs la taille du tampon ? Existe-t-il une fonction **intéressante jamais appelée** ?
+- **Étape 1** : regardez la fonction qui valide la licence. Quelle **opération** est appliquée
+  à votre saisie avant la comparaison ? La donnée de référence est présente dans le binaire…
+  mais transformée.
+- **Étape 2** : une fois « administrateur », le terminal de maintenance lit votre entrée.
+  Combien d'octets accepte-t-il réellement vs la taille du tampon ? Existe-t-il une fonction
+  **intéressante jamais appelée** ?
 
 ## ✅ Validation
 
-Soumettez chaque flag dans CTFd. Le flag 1 se trouve dès l'accès administrateur ; le flag 2 nécessite de détourner l'exécution.
+Exploitez le service `localhost:9003` depuis la boîte. Le **flag 1** apparaît dès l'accès
+administrateur ; le **flag 2** nécessite de détourner l'exécution. Soumettez chaque flag dans CTFd.
 
 Bon courage — et n'oubliez pas : *ne codez jamais un secret en dur.* 😉
