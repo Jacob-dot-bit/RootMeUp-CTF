@@ -51,6 +51,7 @@ La plateforme n'est **pas exposée sur Internet** : on y accède via un réseau 
 | 🔵 Blue 1 | Phishing sur corp.local | Forensics — analyse de logs (ELK/Kibana) | [`GUIDE`](challenges/Blue-1-Phishing-corp-local/GUIDE.md) |
 | 🔵 Blue 2 | Mémoire & analyse de malware | Forensics — dump mémoire | [`GUIDE`](challenges/Blue-2-Memoire-Forensics/GUIDE.md) |
 | 🔵 Blue 3 | Hardening | Durcissement système | [`GUIDE`](challenges/Blue-3-Hardening/GUIDE.md) |
+| 🔵 Blue 4 | Helios Incident | Forensic réseau — analyse de capture (PCAP) | [`GUIDE`](challenges/Blue-4-Helios-Incident/GUIDE.md) |
 | 🔴 Red 1 | VAULT-9 | Reverse & exploitation binaire | [`GUIDE`](challenges/Red-1-VAULT-9/GUIDE.md) |
 | 🔴 Red 2 | Opération Silent Ledger | Machine Linux compromise (escalade) | [`GUIDE`](challenges/Red-2-Silent-Ledger/GUIDE.md) |
 | 🔴 Red 3 | Nexus Cipher | Pentest d'une API (crypto/web) | [`GUIDE`](challenges/Red-3-Nexus-Cipher/GUIDE.md) |
