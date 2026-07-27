@@ -1,4 +1,4 @@
-# 🎮 Guide Joueur — Hardening : Operation IRON GATE
+# Guide Joueur - Hardening : Operation IRON GATE
 
 Vous êtes le nouvel administrateur Blue Team de **NORTHWIND**. Le serveur
 **srv-legacy01** est truffé de mauvaises configurations. **Durcissez-le.**
@@ -77,4 +77,8 @@ stat -c '%a %n' <fichier>            # voir les permissions en octal
 - Vous ne pouvez rien casser d'irréversible : l'instance est jetable, relancez-la si besoin.
 - Ne supprimez pas le `sudo` de l'utilisateur **`analyst`** (c'est votre accès admin).
 
-Bon durcissement ! 🛡️
+---
+
+## Bon durcissement ! 🛡️
+
+*Blue Team CTF – Lucas – ESGI Projet Annuel 2026*
