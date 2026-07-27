@@ -93,13 +93,8 @@ pass: Welcome2024!
 > les plus sensibles de Meridian Capital. Prouvez que vous êtes allé jusqu'au bout
 > de l'engagement.
 
-## Note indices
+---
 
-- F5 : "Cherchez les binaires SUID sur le système, puis étudiez ce qu'ils exécutent
-  en interne (`strings`, `ltrace`)."
-- F6 : "`sudo -l` est votre ami. GTFOBins aussi."
-- F7 : "`getcap -r / 2>/dev/null` révèle des choses intéressantes."
-- F8 : "Le protocole de l'orchestrateur accepte un token. Un des fichiers déjà
-  récupérés en contient un."
-- F9 : "`zip2john` + une wordlist connue suffisent."
-- F10 : "`hashcat` avec une attaque par masque sur 6 chiffres est quasi instantané."
+## Bon courage ! 🛡️
+
+*Red Team CTF - Lucas - ESGI Projet Annuel 2026*
