@@ -1,8 +1,5 @@
 # Operation SILENT LEDGER — Brief joueur
 
-> Ceci est le texte destiné à être copié/collé dans CTFd (description de catégorie /
-> de challenge). Le ton est volontairement "rapport de mission red team".
-
 ## Briefing
 
 **Client :** Meridian Capital (société fictive de gestion d'actifs)
@@ -14,17 +11,16 @@ d'un stagiaire IT, `j.martin`. Vous prenez le relais à partir de cet accès ini
 **Objectif :** Élever vos privilèges pas à pas jusqu'à l'exfiltration complète des
 données sensibles de Meridian Capital. Le chemin comporte **10 étapes (flags)**,
 de la simple reconnaissance jusqu'à la compromission totale. Chaque étape rapporte
-des points croissants — soumettez-les au fur et à mesure dans CTFd, vous n'avez
+des points croissants - soumettez-les au fur et à mesure dans CTFd, vous n'avez
 pas besoin d'attendre la fin pour scorer.
 
 **Règles :**
 - Une seule instance Docker à lancer (bouton "Start Instance"). Tout le challenge
   se déroule dessus, du flag 1 au flag 10.
-- Accès initial : `ssh j.martin@<host> -p <port>` — mot de passe fourni ci-dessous.
-- Ne détruisez pas volontairement l'instance des autres participants, ni la vôtre
-  avant d'avoir fini (le bouton "Stop"/"Restart" vous redonne un environnement propre
+- Accès initial : `ssh j.martin@<host> -p <port>` - mot de passe fourni ci-dessous.
+- Ne détruisez pas vôtre instance avant d'avoir fini (le bouton "Stop"/"Restart" vous redonne un environnement propre
   mais réinitialise votre progression sur la machine).
-- Interdiction de bruteforcer le port SSH exposé ou de scanner l'infrastructure CTFd —
+- Interdiction de bruteforcer le port SSH exposé ou de scanner l'infrastructure CTFd -
   tout est fourni pas à pas via l'énumération normale.
 
 **Identifiants de départ :**
@@ -49,8 +45,6 @@ pass: Welcome2024!
 | 10| Silent Ledger                                 | Cassage de PIN + déchiffrement GPG (final)             |    300 |
 
 **Total : 1650 points**
-
-## Description à coller par challenge (CTFd)
 
 ### 1 — Premiers pas (50 pts)
 > Vous venez d'obtenir un accès SSH via une campagne de phishing réussie sur un
@@ -99,11 +93,7 @@ pass: Welcome2024!
 > les plus sensibles de Meridian Capital. Prouvez que vous êtes allé jusqu'au bout
 > de l'engagement.
 
-## Note sur les indices (hints CTFd)
-
-Pour un public de M2, je recommande de **ne pas** activer d'indices payants sur les
-challenges 1 à 4 (trop simple), mais d'en prévoir un discret (coût 10-15% des points)
-sur 5, 6, 7, 8 et 9, du type :
+## Note indices
 
 - F5 : "Cherchez les binaires SUID sur le système, puis étudiez ce qu'ils exécutent
   en interne (`strings`, `ltrace`)."
